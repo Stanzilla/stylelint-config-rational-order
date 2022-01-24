@@ -30,7 +30,7 @@
     "order"
   ],
   "dependencies": {
-    "stylelint": "^14.2.0",
+    "stylelint": "^14.3.0",
     "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
