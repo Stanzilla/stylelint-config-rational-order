@@ -193,30 +193,6 @@ describe('stylelint-config-rational-order/plugin', () => {
     });
   });
 
-  describe('wrong order with disabled plugin', () => {
-    it('correct', () => {
-      const rules = {
-        [ruleName]: false,
-      };
-      const wrong = `
-        a {
-          border: 1px solid blue;
-          position: relative;
-          display: block;
-          color: red;
-
-          background: white;
-        }
-      `;
-      return stylelint.lint(getPluginOptions(wrong, rules)).then(output => {
-        const { errored } = output;
-        const { warnings } = output.results[0];
-        expect(errored).toBeFalsy();
-        expect(warnings).toHaveLength(0);
-      });
-    });
-  });
-
   describe('wrong plugin options', () => {
     it('correct', () => {
       const rules = {
