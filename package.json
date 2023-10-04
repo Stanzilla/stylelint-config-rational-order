@@ -44,5 +44,5 @@
     "prettier": "^2.7.1"
   },
   "homepage": "https://github.com/constverum/stylelint-config-rational-order",
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.4"
 }
